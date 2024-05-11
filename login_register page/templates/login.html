@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <style>body{color: black;
+        background-color: black;}
+        h1{
+            font-size: 100px;
+            color: white;
+            width: 200px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style:normal;
+            flood-color: black;
+        }
+        label{
+        color: white;
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    button{
+        size: 150px;
+        background-color: black;
+        color: white;
+        border-color: wheat;
+        width: 280px;
+    }
+    p{
+        color:red;
+        font-size: 40px;
+        width: 25px;
+    }
+    </style>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="">email</label>
+        <input type="email" name="email"><br><br>
+        <label for="">password</label>
+        <input type="password" name="password"><br><br>
+        <button type="submit">submit</button>
+    </form>
+       <p>{{error}}</p> 
+
+    </form>
+</body>
+</html>
